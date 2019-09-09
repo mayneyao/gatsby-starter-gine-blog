@@ -5193,12 +5193,20 @@ gatsby-react-router-scroll@^2.1.7:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-source-notion-database@^0.4.2, gatsby-source-notion-database@^0.4.5:
+gatsby-source-notion-database@^0.4.5:
   version "0.4.5"
   resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.4.5.tgz#3d0039f40d8b05ab73d9d5c22c0d9b8b33000616"
   integrity sha512-l1N5+Jp+FgSbSzQTWaIYy+1PCFuky9q0Mba2JqiIOxTJUmYoDJJykB1Y1X6PldtsdOvqO2anVly/bb7BSh6o2Q==
   dependencies:
     notabase "^0.6.5"
+    puppeteer "^1.19.0"
+
+gatsby-source-notion-database@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.4.6.tgz#770c1dafc384a37794b70e0e8f734b5c9e3fb3c8"
+  integrity sha512-rsc24wc75I/XTEA3LCAh7V6Wzu8Y0Ka4NAKm2S4+lWcZaAehcSaXeKCXEIsOWFHY7N2LOwLdlBLC7R2NMx9Fvg==
+  dependencies:
+    notabase "^0.6.7"
     puppeteer "^1.19.0"
 
 gatsby-telemetry@^1.1.22:
@@ -8166,6 +8174,15 @@ notabase@^0.6.5:
   version "0.6.6"
   resolved "https://registry.npmjs.org/notabase/-/notabase-0.6.6.tgz#75ad43fc9cbbc1587e63cebcf06d8453f6bba2c4"
   integrity sha512-wilfwKMbLDIvBjlgCuvr9VH78cxUPWRPSUK03QCLS8iBjT4KIxSY7JJzxY8a+9ZugWLeyWksL9UgFkyovOTfNg==
+  dependencies:
+    axios "^0.19.0"
+    dayjs "^1.8.15"
+    node-fetch "^2.6.0"
+
+notabase@^0.6.7:
+  version "0.6.7"
+  resolved "https://registry.npmjs.org/notabase/-/notabase-0.6.7.tgz#c7d30a7ddbeff1f1a2cf4fe496c9356820a5f0a8"
+  integrity sha512-x/6934eDNhAONuTvL+k3/8um/7AXr8857poHuItfT7n0dROLPMjVfAPEcjVwMmVE5fRBrQ+eDLTZIlRK9L36YA==
   dependencies:
     axios "^0.19.0"
     dayjs "^1.8.15"
