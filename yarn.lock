@@ -5201,10 +5201,10 @@ gatsby-source-notion-database@^0.4.5:
     notabase "^0.6.5"
     puppeteer "^1.19.0"
 
-gatsby-source-notion-database@^0.4.6:
-  version "0.4.6"
-  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.4.6.tgz#770c1dafc384a37794b70e0e8f734b5c9e3fb3c8"
-  integrity sha512-rsc24wc75I/XTEA3LCAh7V6Wzu8Y0Ka4NAKm2S4+lWcZaAehcSaXeKCXEIsOWFHY7N2LOwLdlBLC7R2NMx9Fvg==
+gatsby-source-notion-database@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.4.7.tgz#e41c1c18c52c44de30ce7035015bc31f3d5a8571"
+  integrity sha512-Md4/H3SRPEI0HKFa9r4cOQlihksjczkjruxKESvdDR7rk1GmQd3S0yrlD5pf22KZ3fhwA5zPkpHNu8br4scjlg==
   dependencies:
     notabase "^0.6.7"
     puppeteer "^1.19.0"
