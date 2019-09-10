@@ -5232,10 +5232,10 @@ gatsby-telemetry@^1.1.22:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-theme-gine-blog@^0.4.6:
-  version "0.4.6"
-  resolved "https://registry.npmjs.org/gatsby-theme-gine-blog/-/gatsby-theme-gine-blog-0.4.6.tgz#696961edcbe511ed5c322d44a315b7ee23ee2a4c"
-  integrity sha512-9fLoeqVddMUO/uiRC5EoFrS1fsHVBiCtzojHDwjR8quh6qzQHqPnj0y4d8YuzZGnt9Dp1kfUZi7IMWE5XByR/A==
+gatsby-theme-gine-blog@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.npmjs.org/gatsby-theme-gine-blog/-/gatsby-theme-gine-blog-0.4.7.tgz#89609a2fdd1d556f5345cffb8ca621cd2cb705e5"
+  integrity sha512-E3FEa1dHeV165Qe2i8Y+Fmgk/1d9i7lEcAXlalv5WTh1kOLEBNvPvtclmD0To/2odO8+m51zkHw/hBG/TEDqsg==
   dependencies:
     "@antv/g2" "^3.4.10"
     "@material-ui/core" "3.9.0"
@@ -5255,9 +5255,11 @@ gatsby-theme-gine-blog@^0.4.6:
     gatsby-plugin-react-helmet "^3.0.5"
     gatsby-plugin-sitemap "^2.0.4"
     gatsby-source-notion-database "^0.4.5"
+    image-downloader "^3.5.0"
     jss latest
     katex "^0.10.2"
     lodash "^4.17.13"
+    notabase "^0.6.8"
     prismjs "^1.16.0"
     prop-types latest
     puppeteer "^1.17.0"
@@ -6184,6 +6186,13 @@ ignore@^5.1.1:
   version "5.1.4"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha512-MzbUSahkTW1u7JpKKjY7LCARd1fU5W2rLdxlM4kdkayuCwZImjkpluF9CM1aLewYJguPDqewLam18Y6AU69A8A==
+
+image-downloader@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/image-downloader/-/image-downloader-3.5.0.tgz#88c437f83b28817e09b400d5ab1f0f753410135d"
+  integrity sha512-7n6xFEcelGaJHy3Zq/D/H78BOZtdTo2f7KiI5vxGkvJT0pcz/7LcDShSr3MwRudgIG9/QY0mxEakQ9SAExFMzg==
+  dependencies:
+    request "^2.88.0"
 
 immutable@~3.7.6:
   version "3.7.6"
@@ -8183,6 +8192,15 @@ notabase@^0.6.7:
   version "0.6.7"
   resolved "https://registry.npmjs.org/notabase/-/notabase-0.6.7.tgz#c7d30a7ddbeff1f1a2cf4fe496c9356820a5f0a8"
   integrity sha512-x/6934eDNhAONuTvL+k3/8um/7AXr8857poHuItfT7n0dROLPMjVfAPEcjVwMmVE5fRBrQ+eDLTZIlRK9L36YA==
+  dependencies:
+    axios "^0.19.0"
+    dayjs "^1.8.15"
+    node-fetch "^2.6.0"
+
+notabase@^0.6.8:
+  version "0.6.8"
+  resolved "https://registry.npmjs.org/notabase/-/notabase-0.6.8.tgz#14f042cadc47a3614e857237b524e1eaf87eb16a"
+  integrity sha512-jjRPikx6IaHHmpP0ZHoF1syCN1Z62eBDbg7RZHfwEkzWY/fPNiTQjUB0xH4uiOpSIDQdNy3hXvBJUz5jnan9ww==
   dependencies:
     axios "^0.19.0"
     dayjs "^1.8.15"
