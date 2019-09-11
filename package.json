@@ -10,8 +10,8 @@
     },
     "dependencies": {
         "gatsby": "^2.15.11",
-        "gatsby-source-notion-database": "^0.5.3",
-        "gatsby-theme-gine-blog": "^0.4.9",
+        "gatsby-source-notion-database": "^0.5.4",
+        "gatsby-theme-gine-blog": "^0.5.0",
         "react": "^16.9.0",
         "react-dom": "^16.9.0"
     }
