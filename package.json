@@ -15,7 +15,7 @@
         "gatsby": "^2.15.11",
         "gatsby-plugin-netlify-cache": "^1.2.0",
         "gatsby-source-notion-database": "^0.5.9",
-        "gatsby-theme-gine-blog": "^0.5.2",
+        "gatsby-theme-gine-blog": "^0.5.3",
         "react": "^16.9.0",
         "react-dom": "^16.9.0"
     },
