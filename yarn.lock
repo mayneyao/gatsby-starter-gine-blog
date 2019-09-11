@@ -5207,10 +5207,10 @@ gatsby-react-router-scroll@^2.1.7:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-source-notion-database@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.5.8.tgz#b8cb66c640ca04e3f22efe69381c1daa43f41eab"
-  integrity sha512-lvZVdg73CGuUKVIFvuboXxZeR88nkBjeYjyakYo4PMZ/cU52pA/joSBGUIVPpPtNq69v75xAryZydiX+y28K6g==
+gatsby-source-notion-database@^0.5.9:
+  version "0.5.9"
+  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.5.9.tgz#7b3b4b2b4c956c15f95082e31f2aff0409c9878d"
+  integrity sha512-hOhyKhaFF2WugGt+n7Eny6sDvhD7+EWkT5lgNOOSYjeP28HUJts9ldmJoYQLbdGMy2/KOTVgnZ6DZ7YO3N8kIg==
   dependencies:
     notabase "^0.6.9"
     puppeteer "^1.19.0"
@@ -5238,10 +5238,10 @@ gatsby-telemetry@^1.1.22:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-theme-gine-blog@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.npmjs.org/gatsby-theme-gine-blog/-/gatsby-theme-gine-blog-0.5.1.tgz#c9566ea571e19f67200b5ca39d3797daecf0df5b"
-  integrity sha512-swMy9XygeJ/OhpGsZ8Bbrjj1MJQ9TlUtuJauwTemJpZSuRPHMGfHghsZdAF1vbchCeM3tcRyb240CCe2V+pmLw==
+gatsby-theme-gine-blog@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.npmjs.org/gatsby-theme-gine-blog/-/gatsby-theme-gine-blog-0.5.2.tgz#7a51336c303bf10d13d4997ba052d1d75af0c9c3"
+  integrity sha512-ECPFcjgOQwdmMhFSnxPPBXgDlOhS+j6XwRCAehp9aTFylSQ/VnebDlM4m71XY4S9qFAVlyMTNa2iwTmp3mkswA==
   dependencies:
     "@antv/g2" "^3.4.10"
     "@material-ui/core" "3.9.0"
