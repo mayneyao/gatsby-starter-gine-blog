@@ -5207,12 +5207,13 @@ gatsby-react-router-scroll@^2.1.7:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-source-notion-database@^0.5.9:
-  version "0.5.9"
-  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.5.9.tgz#7b3b4b2b4c956c15f95082e31f2aff0409c9878d"
-  integrity sha512-hOhyKhaFF2WugGt+n7Eny6sDvhD7+EWkT5lgNOOSYjeP28HUJts9ldmJoYQLbdGMy2/KOTVgnZ6DZ7YO3N8kIg==
+gatsby-source-notion-database@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.npmjs.org/gatsby-source-notion-database/-/gatsby-source-notion-database-0.6.1.tgz#8485aa63ad5ffb0d92e359e3e961d94a891ebb28"
+  integrity sha512-Empgb0kla40ZKtixi9G2VbgcEwVeCWv8+rS2mps94UJcfGEh7ZIgGebI53iDZTPckutSWTaVB52NyHZJ/MhPTA==
   dependencies:
     notabase "^0.6.9"
+    p-limit "^2.2.1"
     puppeteer "^1.19.0"
 
 gatsby-telemetry@^1.1.22:
@@ -8579,7 +8580,7 @@ p-limit@^1.1.0:
   dependencies:
     p-try "^1.0.0"
 
-p-limit@^2.0.0, p-limit@^2.2.0:
+p-limit@^2.0.0, p-limit@^2.2.0, p-limit@^2.2.1:
   version "2.2.1"
   resolved "https://registry.npmjs.org/p-limit/-/p-limit-2.2.1.tgz#aa07a788cc3151c939b5131f63570f0dd2009537"
   integrity sha512-85Tk+90UCVWvbDavCLKPOLC9vvY8OwEX/RtKF+/1OADJMVlFfEHOiMTPVyxg7mk/dKa+ipdHm0OUkTvCpMTuwg==
