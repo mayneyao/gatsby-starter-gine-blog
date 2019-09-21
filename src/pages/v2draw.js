@@ -5,12 +5,12 @@ import dayjs from 'dayjs'
 import { parseImageUrl } from 'notabase'
 
 function ImageGridListItem(props) {
-    const { date, image, name, comment } = props.data
+    const { data } = props
     return (
         <div>
-            <h3>{date}</h3>
-            <img src={parseImageUrl(image[0], 400)} alt={name} loading="lazy" />
-            <div>{comment}</div>
+            <h3>{data.date}</h3>
+            <img src={parseImageUrl(data.image[0], 400)} alt={data.name} loading="lazy" />
+            <div>{data.comment}</div>
         </div>
     );
 }
