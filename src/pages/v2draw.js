@@ -2,15 +2,15 @@ import React from 'react'
 import withRoot from 'gatsby-theme-gine-blog/src/withRoot'
 import DynamicPage from 'gatsby-theme-gine-blog/src/components/dynamicPage'
 import dayjs from 'dayjs'
-import { parseImageUrl } from 'notabase'
+import { parseImageUrl } from 'notabase/src/utils'
 
 function ImageGridListItem(props) {
-    const { data } = props
+    const { data: { date, image, name, comment } } = props
     return (
         <div>
-            <h3>{data.date}</h3>
-            <img src={parseImageUrl(data.image[0], 400)} alt={data.name} loading="lazy" />
-            <div>{data.comment}</div>
+            <h3>{date}</h3>
+            <img src={parseImageUrl(image[0], 400)} alt={name} loading="lazy" />
+            <div>{comment}</div>
         </div>
     );
 }
