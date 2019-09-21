@@ -14,8 +14,7 @@ import MusicIcon from '@material-ui/icons/Headset'
 import FriendIcon from '@material-ui/icons/People'
 import MomentIcon from '@material-ui/icons/Camera'
 import PaletteIcon from '@material-ui/icons/Palette'
-import Divider from '@material-ui/core/Divider'
-import Now from '../../../components/now/index'
+
 import CardMedia from '@material-ui/core/CardMedia'
 import { Link } from 'gatsby'
 import avatar from 'gatsby-theme-gine-blog/src/static/avatar.jpg'
@@ -106,16 +105,14 @@ function SimpleList(props) {
                     </MyLink>
                 }
 
-                {/* {
-                    config.music.open && <MyLink to={'music'}>
-                        <ListItem button>
-                            <ListItemIcon>
-                                <MusicIcon style={{ color: '#00bfa5' }} />
-                            </ListItemIcon>
-                            <ListItemText primary="音乐" />
-                        </ListItem>
-                    </MyLink>
-                } */}
+                <MyLink to={'music'}>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <MusicIcon style={{ color: '#00bfa5' }} />
+                        </ListItemIcon>
+                        <ListItemText primary="音乐" />
+                    </ListItem>
+                </MyLink>
 
                 {/* {
                     config.bangumi.open && <MyLink to={'bangumi'}>
@@ -127,16 +124,15 @@ function SimpleList(props) {
                         </ListItem>
                     </MyLink>
                 } */}
-                {/* {
-                    config.draw.open && <MyLink to={'v2draw'}>
-                        <ListItem button>
-                            <ListItemIcon>
-                                <PaletteIcon style={{ color: '#00bcd4' }} />
-                            </ListItemIcon>
-                            <ListItemText primary="绘画" />
-                        </ListItem>
-                    </MyLink>
-                } */}
+                <MyLink to={'v2draw'}>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <PaletteIcon style={{ color: '#00bcd4' }} />
+                        </ListItemIcon>
+                        <ListItemText primary="绘画" />
+                    </ListItem>
+                </MyLink>
+
                 <MyLink to={'links'}>
                     <ListItem button>
                         <ListItemIcon>
@@ -145,8 +141,6 @@ function SimpleList(props) {
                         <ListItemText primary="友链" />
                     </ListItem>
                 </MyLink>
-                <Divider />
-                <Now />
 
             </List>
         </div>
