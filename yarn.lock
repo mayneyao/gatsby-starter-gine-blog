@@ -5269,10 +5269,10 @@ gatsby-telemetry@^1.1.22:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-theme-gine-blog@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.npmjs.org/gatsby-theme-gine-blog/-/gatsby-theme-gine-blog-0.5.8.tgz#635dd1ecd0845e6f94901e25f8da1bbec0a52019"
-  integrity sha512-lSV9QSvcK9AwNIxRgkU5FTPLfCCHM5Ikh3HPYBT4vnkZsK7IiBKZdhdxQEh/WcNCRaWA1VBWbwaUKYCCSdulcQ==
+gatsby-theme-gine-blog@^0.5.9:
+  version "0.5.9"
+  resolved "https://registry.npmjs.org/gatsby-theme-gine-blog/-/gatsby-theme-gine-blog-0.5.9.tgz#9dff7b845f229a49918cb4707378bda64c67ac1a"
+  integrity sha512-tdo2k7/igw9AEfXIdGl+kewZ/pZcHRMJ8Myv7FSxvqiDqBUItUrTZ5jP8v15UU9fgsJS/fCUe2FnHMPm5Ls7Ow==
   dependencies:
     "@antv/g2" "^3.4.10"
     "@material-ui/core" "3.9.0"
