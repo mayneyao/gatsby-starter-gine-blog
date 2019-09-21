@@ -17,7 +17,7 @@
         "gatsby-plugin-offline": "^3.0.8",
         "gatsby-plugin-sitemap": "^2.2.14",
         "gatsby-source-notion-database": "^0.6.1",
-        "gatsby-theme-gine-blog": "^0.5.6",
+        "gatsby-theme-gine-blog": "^0.5.7",
         "react": "^16.9.0",
         "react-dom": "^16.9.0"
     },
