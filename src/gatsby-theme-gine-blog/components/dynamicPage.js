@@ -1,9 +1,9 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Notabase from 'notabase'
-import withRoot from '../withRoot'
-import Layout from './layout/index'
 import LinearProgress from '@material-ui/core/LinearProgress'
+import withRoot from 'gatsby-theme-gine-blog/src/withRoot'
+import Layout from './layout/index'
 
 const styles = theme => ({
     index: {
