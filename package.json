@@ -1,8 +1,8 @@
 {
-    "name": "my-gine-blog-example",
+    "name": "my-gine-blog",
     "version": "1.0.0",
     "main": "index.js",
-    "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+    "author": "Mayne",
     "license": "MIT",
     "scripts": {
         "develop": "gatsby develop",
