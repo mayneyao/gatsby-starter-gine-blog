@@ -126,7 +126,7 @@ class Layout extends React.Component {
               }
           }`}
                 render={data => (
-                    <div style={{ background: '#f3f5f7' }}>
+                    <div>
                         <Helmet defaultTitle={`${data.siteConfig.title}${title ? ` - ${title}` : ""}`}>
                             <html lang="zh-cmn-Hans" />
                             <meta name="description" content={`${data.siteConfig.title} `} />
@@ -176,7 +176,6 @@ class Layout extends React.Component {
                         <div style={{
                             height: 40,
                             position: "fixed",
-                            background: "#fff",
                             width: '100%',
                             top: 0,
                             zIndex: 999,
