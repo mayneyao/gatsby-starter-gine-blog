@@ -16,6 +16,7 @@ import SearchButton from 'gatsby-theme-gine-blog/src/components/search/search'
 import PlayingMusic from '../../../components/now/music'
 import PlayingGame from '../../../components/now/game'
 import { StaticQuery, graphql } from "gatsby"
+import icon from 'gatsby-theme-gine-blog/src/static/favicon.ico'
 
 const styles = {
     root: {
@@ -23,11 +24,12 @@ const styles = {
         top: 0,
     },
     menuButton: {
-        top: 0,
-        marginLeft: 0,
-        marginRight: 20,
+        margin: 10,
         position: 'absolute',
-        zIndex: 100
+        zIndex: 100,
+        '&:hover': {
+            cursor: 'pointer'
+        }
     },
     drawer: {
         width: 300,
@@ -128,6 +130,7 @@ class Layout extends React.Component {
                         <Helmet defaultTitle={`${data.siteConfig.title}${title ? ` - ${title}` : ""}`}>
                             <html lang="zh-cmn-Hans" />
                             <meta name="description" content={`${data.siteConfig.title} `} />
+                            <link rel="shortcut icon" href={icon} />
                             <noscript>
                                 为了更好的浏览体验，请不要在本页面禁用 Javascript 🙂
                     </noscript>
@@ -179,10 +182,7 @@ class Layout extends React.Component {
                             zIndex: 999,
                             ...navStyle
                         }}>
-                            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer(true)}>
-                                <MenuIcon />
-                            </IconButton>
-
+                            <MenuIcon className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer(true)} />
                             <div style={{ wdith: '100%', height: '100%' }} onClick={this.back2Top}>
 
                             </div>
