@@ -1,6 +1,8 @@
 module.exports = {
     siteMetadata: {
         siteUrl: `https://gine.me`,
+        title: `Mayne's Blog`,
+        description: `All things about Mayne`,
     },
     plugins: [
         {
@@ -49,6 +51,10 @@ module.exports = {
             options: {
                 runtimeCaching: [
                     {
+                        urlPattern: /^https:\/\/notion.gine.workers.dev/,
+                        handler: `staleWhileRevalidate`,
+                    },
+                    {
                         // fixme 此接口比较特殊，无法通用，这里暂时写死
                         urlPattern: /^https:\/\/api.gine.me\/$/,
                         handler: `staleWhileRevalidate`,
@@ -76,6 +82,72 @@ module.exports = {
                     },
                 ],
             },
-        }
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Mayne's Blog`,
+                short_name: `Mayne's Blog`,
+                icon: `src/static/icon.png`,
+                start_url: `/`,
+                background_color: `#ffffff`,
+                theme_color: `#ffffff`,
+                display: `standalone`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: {
+                query: `
+                {
+                  site {
+                    siteMetadata {
+                      title
+                      description
+                      siteUrl
+                      site_url: siteUrl
+                    }
+                  }
+                }
+              `,
+                feeds: [
+                    {
+                        serialize: ({ query: { site, allPosts } }) => {
+                            return allPosts.edges.map(edge => {
+                                return {
+                                    title: edge.node.name,
+                                    description: edge.node.desc,
+                                    date: edge.node.public_date,
+                                    url: `${site.siteMetadata.siteUrl}/posts/${edge.node.slug}`,
+                                    guid: edge.node.slug,
+                                    custom_elements: [{ "content:encoded": edge.node.name }],
+                                }
+                            })
+                        },
+                        query: `
+                    {
+                        allPosts(sort: {order: DESC, fields: public_date}, filter: {status: {eq: "published"}}) {
+                            edges {
+                              node {
+                                name
+                                desc
+                                slug
+                                public_date
+                              }
+                            }
+                        }
+                    }
+                  `,
+                        output: "/rss.xml",
+                        title: "Mayne's Blog RSS Feed",
+                        // optional configuration to insert feed reference in pages:
+                        // if `string` is used, it will be used to create RegExp and then test if pathname of
+                        // current page satisfied this regular expression;
+                        // if not provided or `undefined`, all pages will have feed reference inserted
+                        match: "^/blog/",
+                    },
+                ],
+            },
+        },
     ],
 }
