@@ -14,6 +14,7 @@ import MusicIcon from '@material-ui/icons/Headset'
 import FriendIcon from '@material-ui/icons/People'
 import MomentIcon from '@material-ui/icons/Camera'
 import PaletteIcon from '@material-ui/icons/Palette'
+import GamesIcon from '@material-ui/icons/Games'
 
 import CardMedia from '@material-ui/core/CardMedia'
 import { Link } from 'gatsby'
@@ -113,17 +114,14 @@ function SimpleList(props) {
                         <ListItemText primary="音乐" />
                     </ListItem>
                 </MyLink>
-
-                {/* {
-                    config.bangumi.open && <MyLink to={'bangumi'}>
-                        <ListItem button>
-                            <ListItemIcon>
-                                <SubscriptionsIcon style={{ color: '#af52bf' }} />
-                            </ListItemIcon>
-                            <ListItemText primary="番剧" />
-                        </ListItem>
-                    </MyLink>
-                } */}
+                <MyLink to={'games'}>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <GamesIcon style={{ color: '#af52bf' }} />
+                        </ListItemIcon>
+                        <ListItemText primary="游戏" />
+                    </ListItem>
+                </MyLink>
                 <MyLink to={'v2draw'}>
                     <ListItem button>
                         <ListItemIcon>
